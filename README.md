@@ -14,7 +14,7 @@ Sudoku Game &amp; Solver with Python
 ## The Solver
 > In the solver feature, the user will be given an empty 9x9 grid. The user can manually input an unsolved puzzle into the grid and click on **Reveal Solution** to get the solved puzzle.
 > The user can also save the puzzle that he/she entered into the grid. The puzzle will be saved in a folder named **savedpuzzles** in the local directory. 
-> The user can also open a puzzle which will be displayed on the empty grid. The puzzle can be opened from the **savedpuzzles** folder. To be precise, the user can open any folder that contains a puzzle **AS LONG AS** the puzzle is saved in a binary file (.dat) in the following configuration:
+> The user can also open a puzzle which will be displayed on the empty grid. The puzzle can be opened from the **savedpuzzles** folder. To be precise, the user can open any file in his/her device that contains a puzzle **AS LONG AS** the puzzle is saved in a binary file (.dat) in the following configuration:
 >> [
 >> 
 >> [1,0,1,1,0,1,1,1,1],
