@@ -1,4 +1,4 @@
-import random, time, pickle, os
+import random, time, pickle, os, datetime
 from tkinter import *
 from tkinter import filedialog
 
@@ -587,11 +587,19 @@ def sudokusolver():
         win.title('Save Puzzle')
         l = Label(win, text='Enter name for puzzle:')
         puzname = Entry(win, width=25)
-        saveB = Button(win, text='Save', command=lambda:write(puzname.get()))
+        dt  = datetime.datetime.now()
+        
+        if puzname.get() == '':
+            pn = dt
+        else:
+            pn = puzname.get()
+            
+        saveB = Button(win, text='Save', command=lambda:write(pn))
         l.pack()
         puzname.pack()
         saveB.pack()
         win.mainloop()
+        
     # Function to open a saved puzzle
     def openpuz():
         for y in range(9):
